@@ -10,7 +10,6 @@
 */
 int execute_opcode(char *line_content, stack_t **stack_head, unsigned int line_counter, FILE *monty_file)
 {
-bus_t bus = {NULL, NULL, NULL, 0};
 instruction_t opcode_table[] = {
 {"push", func_push}, {"pall", func_pall}, {"pint", func_pint},
 {"pop", func_pop},
