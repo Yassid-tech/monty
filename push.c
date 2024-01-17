@@ -23,7 +23,7 @@ if (invalid_input == 1)
 fprintf(stderr, "L%d: usage: push integer\n", line_num);
 fclose(bus.file);
 free(bus.content);
-free_stack(*stack);
+free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
 }
@@ -32,7 +32,7 @@ else
 fprintf(stderr, "L%d: usage: push integer\n", line_num);
 fclose(bus.file);
 free(bus.content);
-free_stack(*stack);
+free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
 value = atoi(bus.arg);
