@@ -1,5 +1,5 @@
 #include "monty.h"
-
+bus_t bus = {NULL, NULL, NULL, 0};
 /**
  * execute_opcode - executes the opcode
  * @line_content: line content
@@ -23,7 +23,6 @@ instruction_t opcode_table[] = {
 {"pchar", func_pchar},
 {NULL, NULL}
 };
-bus_t bus = {NULL, NULL, NULL, 0};
 unsigned int index = 0;
 char *operation;
 operation = strtok(line_content, " \n\t");
