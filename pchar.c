@@ -9,6 +9,7 @@
  */
 void func_pchar(stack_t **stack, unsigned int line_num)
 {
+bus_t bus = {NULL, NULL, NULL, 0};
 stack_t *current_node;
 current_node = *stack;
 if (!current_node)
