@@ -43,7 +43,7 @@ if (operation && opcode_table[index].opcode == NULL)
 fprintf(stderr, "L%d: unknown instruction %s\n", line_counter, operation);
 fclose(monty_file);
 free(line_content);
-free_stack(*stack_head);
+free_stack_memory(*stack_head);
 exit(EXIT_FAILURE);
 }
 return 1;
