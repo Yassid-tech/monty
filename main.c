@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 bus_t my_bus = {NULL, NULL, NULL, 0};
-bus = my_bus
+bus = my_bus;
 char *line_content;
 FILE *monty_file;
 size_t size = 0;
