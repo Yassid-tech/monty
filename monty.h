@@ -62,7 +62,7 @@ void func_push(stack_t **stack, unsigned int line_num);
 void func_pall(stack_t **stack, unsigned int line_num);
 void func_pint(stack_t **stack, unsigned int number);
 int execute_opcode(char *line_content, stack_t **head, unsigned int stack_head, FILE *monty_file);
-void free_stack(stack_t *stack);
+void free_stack_memory(stack_t *stack_head);
 void func_pop(stack_t **stack, unsigned int line_num);
 void func_swap(stack_t **stack, unsigned int line_num);
 void func_add(stack_t **stack, unsigned int line_num);
