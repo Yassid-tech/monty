@@ -3,12 +3,12 @@
 /**
  * execute_opcode - executes the opcode
  * @content: line content
- * @stack_head: head linked list - stack
+ * @stack: head linked list - stack
  * @line_counter: line_counter
  * @file: pointer to monty file
  * Return: no return
 */
-int execute_opcode(char *content, stack_t **stack_head, unsigned int line_counter,FILE *file)
+int execute_opcode(char *content, stack_t **stack, unsigned int line_counter,FILE *file)
 {
 instruction_t opcode_table[] = {
 {"push", func_push}, {"pall", func_pall}, {"pint", func_pint},
@@ -33,7 +33,7 @@ while (opcode_table[index].opcode && operation)
 {
 if (strcmp(operation, opcode_table[index].opcode) == 0)
 {
-opcode_table[index].f(stack_head, line_counter);
+opcode_table[index].f(stack, line_counter);
 return (0);
 }
 index++;
@@ -43,7 +43,7 @@ if (operation && opcode_table[index].opcode == NULL)
 fprintf(stderr, "L%d: unknown instruction %s\n", line_counter, operation);
 fclose(file);
 free(content);
-free_stack_memory(*stack_head);
+free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
 return (1);
