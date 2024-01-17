@@ -23,7 +23,7 @@ fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
 monty_file = fopen(argv[1], "r");
-bus.file = monty_file;
+bus->file = monty_file;
 if (!monty_file)
 {
 fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
@@ -33,7 +33,7 @@ while (read_line > 0)
 {
 line_content = NULL;
 read_line = getline(&line_content, &size, monty_file);
-bus.content = line_content;
+bus->content = line_content;
 line_counter++;
 if (read_line > 0)
 {
