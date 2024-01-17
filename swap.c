@@ -8,6 +8,7 @@
  */
 void func_swap(stack_t **stack, unsigned int line_num)
 {
+bus_t bus = {NULL, NULL, NULL, 0};
 stack_t *current_node;
 int length = 0, temp;
 current_node = *stack;
