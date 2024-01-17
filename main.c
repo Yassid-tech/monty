@@ -9,7 +9,6 @@
  */
 int main(int argc, char *argv[])
 {
-bus_t bus = {NULL, NULL, NULL, 0};
 char *line_content;
 FILE *monty_file;
 size_t size = 0;
