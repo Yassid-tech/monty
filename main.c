@@ -35,7 +35,7 @@ bus.content = line_content;
 line_counter++;
 if (read_line > 0)
 {
-execute_opcode(line_content, &stack, line_counter, monty_file);
+execute_opcod(line_content, &stack, line_counter, monty_file);
 }
 free(line_content);
 }
