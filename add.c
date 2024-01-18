@@ -2,7 +2,7 @@
 
 /**
  * func_add - performs the addition of the
- * top two elements of the stack
+ * top two elements of the stack 
  * @stack: stack head
  * @line_num: number's line
  * Return: no return
