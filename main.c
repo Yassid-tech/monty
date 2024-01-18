@@ -1,18 +1,17 @@
 #define _POSIX_C_SOURCE 200809L
 #include "monty.h"
-
+yass_id yass;
 /**
  * start_bus - initializes the global variables
  *
  * Return: no return
  */
-void start_bus()
+void start_yass()
 {
-yass_id bus;
-bus.arg=NULL;
-bus.file=NULL;
-bus.content=NULL;
-bus.lifi=0;
+yass.arg=NULL;
+yass.file=NULL;
+yass.content=NULL;
+yass.lifi=0;
 }
 
 /**
@@ -35,7 +34,7 @@ fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
 monty_file = fopen(argv[1], "r");
-bus.file = monty_file;
+yass.file = monty_file;
 if (!monty_file)
 {
 fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
@@ -45,7 +44,7 @@ while (read_line > 0)
 {
 line_content = NULL;
 read_line = getline(&line_content, &size, monty_file);
-bus.content = line_content;
+yass.content = line_content;
 line_counter++;
 if (read_line > 0)
 {
