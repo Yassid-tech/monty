@@ -8,7 +8,6 @@
  */
 void func_add(stack_t **stack, unsigned int line_num)
 {
-bus_t bus = {NULL, NULL, NULL, 0};
 stack_t *current_node;
 int length = 0, result;
 current_node = *stack;
