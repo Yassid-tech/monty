@@ -7,7 +7,6 @@
 */
 void func_pint(stack_t **stack, unsigned int counter)
 {
-bus_t bus = {NULL, NULL, NULL, 0};
 if (*stack == NULL)
 {
 fprintf(stderr, "L%u: can't pint, stack empty\n", counter);
