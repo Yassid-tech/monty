@@ -39,7 +39,7 @@ FILE *file;
 char *content;
 int lifi;
 } yass_id;
-extern yass_id bus;
+extern yass_id yass;
 
 /**
  * struct instruction_s - opcode and its function
