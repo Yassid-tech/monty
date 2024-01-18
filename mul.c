@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
  * func_mul - performs multiplication on the top two elements of the stack
  * @stack: stack head
