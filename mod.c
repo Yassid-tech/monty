@@ -3,7 +3,7 @@
 /**
  * func_mod - calculates the remainder of the division
  * between the second-to-top element and the head stack
- * @stack: stack head
+ * @stack: stack  head
  * @line_num: number's line
  * Return: no return
  */
