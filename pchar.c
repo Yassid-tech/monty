@@ -14,16 +14,16 @@ current_node = *stack;
 if (!current_node)
 {
 fprintf(stderr, "L%d: can't pchar, stack empty\n", line_num);
-fclose(bus.file);
-free(bus.content);
+fclose(yass.file);
+free(yass.content);
 free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
 if (current_node->n > 127 || current_node->n < 0)
 {
 fprintf(stderr, "L%d: can't pchar, value out of range\n", line_num);
-fclose(bus.file);
-free(bus.content);
+fclose(yass.file);
+free(yass.content);
 free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
