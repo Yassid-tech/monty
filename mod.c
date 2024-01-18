@@ -17,8 +17,8 @@ current_node = current_node->next;
 if (node_count < 2)
 {
 fprintf(stderr, "L%d: can't mod, stack too short\n", line_num);
-fclose(bus.file);
-free(bus.content);
+fclose(yass.file);
+free(yass.content);
 free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
@@ -26,8 +26,8 @@ current_node = *stack;
 if (current_node->n == 0)
 {
 fprintf(stderr, "L%d: division by zero\n", line_num);
-fclose(bus.file);
-free(bus.content);
+fclose(yass.file);
+free(yass.content);
 free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
