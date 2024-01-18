@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- * func_pint - prints the top
+ * func_pint - performs the print of the element in the top
  * @stack: stack head
- * @counter: line_number
+ * @counter: number's line
  * Return: no return
 */
 void func_pint(stack_t **stack, unsigned int counter)
