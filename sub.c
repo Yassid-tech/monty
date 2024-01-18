@@ -8,7 +8,6 @@
  */
 void func_sub(stack_t **stack, unsigned int line_num)
 {
-bus_t bus = {NULL, NULL, NULL, 0};
 stack_t *current_node;
 int result, node_count;
 current_node = *stack;
