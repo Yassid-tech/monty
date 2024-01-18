@@ -1,6 +1,6 @@
 #define _POSIX_C_SOURCE 200809L
 #include "monty.h"
-
+bus_t my_bus = {NULL, NULL, NULL, 0};
 /**
  * main - Monty code interpreter
  * @argc: number of arguments
@@ -9,7 +9,6 @@
  */
 int main(int argc, char *argv[])
 {
-bus_t my_bus = {NULL, NULL, NULL, 0};
 bus = &my_bus;
 char *line_content;
 FILE *monty_file;
