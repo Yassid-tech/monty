@@ -3,7 +3,7 @@
 /**
  * func_push - performs the addition of a node to the stack
  * @stack: stack head
- * @line_num: line number
+ * @line_num: number's line
  * Return: no return
 */
 void func_push(stack_t **stack, unsigned int line_num)
