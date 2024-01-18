@@ -3,7 +3,7 @@
 /**
  * func_pop - pops the top element off the stack
  * @stack: stack head
- * @line_num: line_number
+ * @line_num: number's line
  * Return: no return
  */
 void func_pop(stack_t **stack, unsigned int line_num)
