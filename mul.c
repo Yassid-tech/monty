@@ -2,7 +2,7 @@
 /**
  * func_mul - performs multiplication on
  * the top two elements of the stack
- * @stack: stack head
+ * @stack: stack  head
  * @line_num: number's line
  * Return: no return
  */
