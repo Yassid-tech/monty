@@ -1,5 +1,20 @@
 #define _POSIX_C_SOURCE 200809L
 #include "monty.h"
+yass_id bus;
+
+/**
+ * start_bus - initializes the global variables
+ *
+ * Return: no return
+ */
+void start_bus()
+{
+bus.arg=NULL;
+bus.file=NULL;
+bus.content=NULL;
+bus.lifi=0;
+}
+
 /**
  * main - Monty code interpreter
  * @argc: number of arguments
