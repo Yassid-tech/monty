@@ -1,6 +1,5 @@
 #define _POSIX_C_SOURCE 200809L
 #include "monty.h"
-yass_id bus;
 
 /**
  * start_bus - initializes the global variables
@@ -9,6 +8,7 @@ yass_id bus;
  */
 void start_bus()
 {
+yass_id bus;
 bus.arg=NULL;
 bus.file=NULL;
 bus.content=NULL;
