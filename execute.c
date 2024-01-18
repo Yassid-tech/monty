@@ -28,7 +28,7 @@ char *operation;
 operation = strtok(content, " \n\t");
 if (operation && operation[0] == '#')
 return (0);
-bus.arg = strtok(NULL, " \n\t");
+yass.arg = strtok(NULL, " \n\t");
 while (opcode_table[index].opcode && operation)
 {
 if (strcmp(operation, opcode_table[index].opcode) == 0)
