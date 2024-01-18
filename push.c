@@ -8,7 +8,6 @@
 */
 void func_push(stack_t **stack, unsigned int line_num)
 {
-bus_t bus = {NULL, NULL, NULL, 0};
 int value, index = 0, invalid_input = 0;
 if (bus.arg)
 {
