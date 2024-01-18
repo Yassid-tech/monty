@@ -19,8 +19,8 @@ length++;
 if (length < 2)
 {
 fprintf(stderr, "L%d: can't add, stack too short\n", line_num);
-fclose(bus.file);
-free(bus.content);
+fclose(yass.file);
+free(yass.content);
 free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
