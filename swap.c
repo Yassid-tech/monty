@@ -3,7 +3,7 @@
 /**
  * func_swap - swaps the top two elements of the stack
  * @stack: stack head
- * @line_num: line_number
+ * @line_num: number's line
  * Return: no return
  */
 void func_swap(stack_t **stack, unsigned int line_num)
