@@ -12,8 +12,8 @@ stack_t *current_node;
 if (*stack == NULL)
 {
 fprintf(stderr, "L%d: can't pop an empty stack\n", line_num);
-fclose(bus.file);
-free(bus.content);
+fclose(yass.file);
+free(yass.content);
 free_stack_memory(*stack);
 exit(EXIT_FAILURE);
 }
