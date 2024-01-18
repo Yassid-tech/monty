@@ -1,8 +1,9 @@
 #include "monty.h"
 
 /**
- * free_stack_memory - frees a doubly linked list
- * @stack_head: head of the stack
+ * free_stack_memory - deallocates memory for a 
+ * doubly linked list
+ * @stack_head: stack's head
  */
 void free_stack_memory(stack_t *stack_head)
 {

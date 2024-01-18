@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * func_nop - does nothing (no-operation)
+ * func_nop - does nothing
  * @stack: stack head
  * @line_num: number's line
  * Return: no return

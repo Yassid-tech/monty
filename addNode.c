@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * add_node - adds a node to the head of the stack
+ * add_node - prepend a new element onto
+ * the head stack
  * @stack_head: head of the stack
  * @value: new value
  * Return: no return

@@ -2,7 +2,7 @@
 #include "monty.h"
 yass_id yass;
 /**
- * start_bus - initializes the global variables
+ * start_yass - initializes the global variables
  *
  * Return: no return
  */
@@ -15,7 +15,7 @@ yass.lifi=0;
 }
 
 /**
- * main - Monty code interpreter
+ * main - interpreter for monty code
  * @argc: number of arguments
  * @argv: Monty file location
  * Return: 0 on success

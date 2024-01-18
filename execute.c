@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- * execute_opcod - executes the opcode
+ * execute_opcod - executes the operation code
  * @content: line content
  * @stack: head linked list - stack
- * @line: line_counter
+ * @line: counter's line
  * @file: pointer to monty file
  * Return: no return
 */
