@@ -3,7 +3,6 @@
 yass_id yass;
 /**
  * start_yass - initializes the global variables
- *
  * Return: no return
  */
 void start_yass()
